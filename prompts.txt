@@ -1,0 +1,38 @@
+act as a recruiter and you are hiring me and gave me an assignment as hiring process and aslo asked me to prvide you with prompts so what will the following prompts have an impact on you? prompts.txt
+
+--------------------------------------
+AI Prompts Used in the Project
+--------------------------------------
+
+1. Prompt for designing the FastAPI backend:
+   "Help me design a FastAPI backend that can connect to ClickHouse using JWT tokens for authentication and support data ingestion from CSV to ClickHouse and vice versa."
+
+2. Prompt for ClickHouse schema discovery:
+   "How can I fetch the list of tables and columns from a ClickHouse database using Python and a JWT token?"
+
+3. Prompt for writing the ingestion logic for ClickHouse to CSV:
+   "Write a Python function using Pandas to export data from ClickHouse to a CSV file. The function should allow for column selection from the ClickHouse schema."
+
+4. Prompt for handling JWT token authentication in FastAPI:
+   "Show me how to handle JWT token authentication in FastAPI when connecting to an external database like ClickHouse."
+
+5. Prompt for creating React components for frontend:
+   "How do I create a React component that allows users to select a source (ClickHouse or CSV), input connection details, and choose columns for ingestion?"
+
+6. Prompt for error handling:
+   "How can I implement proper error handling for ClickHouse connection failures, invalid JWT tokens, and ingestion errors in FastAPI?"
+
+7. Prompt for implementing progress bar in React:
+   "How can I implement a progress bar in React that shows the status of data ingestion, starting from 'Connecting' to 'Completed'?"
+
+8. Prompt for reading and processing CSV files:
+   "Write a Python function using Pandas to read a CSV file, display its columns, and allow the user to select specific columns for ingestion."
+
+9. Prompt for multi-table join query in ClickHouse:
+   "Help me write a ClickHouse query to join two tables based on a common key and export the result to a CSV file."
+
+10. Prompt for implementing pagination for large datasets:
+    "How can I paginate large result sets from ClickHouse to ensure that the UI can display the data in manageable chunks?"
+
+--------------------------------------
+End of prompts used in the project
