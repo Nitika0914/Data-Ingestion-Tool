@@ -60,12 +60,12 @@ function App() {
     };
 
     return (
-        <Container fluid className="py-4" style={{ backgroundColor: '#f1f4f8', minHeight: '100vh' }}>
+        <Container fluid className="app-container py-4">
             <Row className="justify-content-center">
                 <Col md={8} lg={6}>
-                    <Card className="card mb-4">
+                    <Card className="custom-card mb-4">
                         <Card.Body>
-                            <h2 className="text-center mb-4">Data Ingestion Tool</h2>
+                            <h2 className="page-title text-center mb-4">Data Ingestion Tool</h2>
                             <ConnectionForm
                                 onConnect={handleConnect}
                                 onFileColumns={handleFileColumns}
@@ -73,7 +73,7 @@ function App() {
                         </Card.Body>
                     </Card>
                     {isConnected && source === 'clickhouse' && (
-                        <Card className="card mb-4">
+                        <Card className="custom-card mb-4">
                             <Card.Body>
                                 <TableSelector onSelectTable={handleSelectTable} />
                                 {tables.length > 0 && (
@@ -89,7 +89,7 @@ function App() {
                         </Card>
                     )}
                     {isConnected && source === 'flatfile' && (
-                        <Card className="card mb-4">
+                        <Card className="custom-card mb-4">
                             <Card.Body>
                                 <ColumnSelector
                                     table=""
@@ -102,7 +102,7 @@ function App() {
                         </Card>
                     )}
                     {isConnected && (
-                        <Card className="card">
+                        <Card className="custom-card">
                             <Card.Body>
                                 <IngestionControl
                                     source={source}
